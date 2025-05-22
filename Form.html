@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>Document</title>
+</head>
+<body>
+    <div classname="App" id="app">
+    <h1>Welcome to our login app</h1>
+    <label>Username:</label>
+    <input type="text" id="username" placeholder="Enter your Username" required/>
+    <br>
+    <br>
+    <label>Password:</label>
+    <input type="password"  id ="password"placeholder="Enter your password" required/>
+    <button id="submit">Submit</button>
+    </div>
+    <script>
+        const username = document.getElementById('username');
+            const password = document.getElementById('password');
+            const button = document.getElementById('submit');
+            function login() {
+                if (username.value === "Yasir" && password.value === "11234") {
+                    console.log("Success");
+                    alert('Successful');
+                }
+                else {
+                    console.log("Failed");
+                    alert("Invalid Username or Password");
+                }
+            }
+        
+   button.addEventListener("click",login);
+    </script>
+
+</body>
+</html>
