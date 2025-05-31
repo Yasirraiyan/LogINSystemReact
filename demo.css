@@ -1,0 +1,134 @@
+* {
+  box-sizing: border-box;
+}
+/* সব এলিমেন্টে box-sizing: border-box সেট করা হয়েছে যাতে padding এবং border যুক্ত করলেও width & height ঠিক থাকে। */
+body {
+  background-color: #2ecc71;
+  font-family: "Open Sans", sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+/* 
+body এর জন্য:
+- সবুজ ব্যাকগ্রাউন্ড (#2ecc71)
+- সুন্দর ফন্ট সেট করা হয়েছে
+- পুরো স্ক্রিনে সেন্টার করার জন্য flex ব্যবহার
+- height 100vh মানে পুরো ভিউপোর্ট
+- margin 0 দিলে ডিফল্ট স্পেসিং বাদ যায় 
+*/
+.container {
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+/* 
+.container ফর্মের বক্সটা:
+- সাদা ব্যাকগ্রাউন্ড
+- গোল কোণা (5px)
+- হালকা ছায়া (box-shadow)
+- overflow: hidden দিলে content বাইরে যাবে না
+- width 400px পর্যন্ত যাবে, তবে ছোট স্ক্রিনে 100% */
+.header {
+  border-bottom: 1px solid #f0f0f0;
+  background-color: #f7f7f7;
+  padding: 20px 40px;
+}
+/* 
+হেডার অংশে:
+- নিচে হালকা বর্ডার
+- হালকা ধূসর ব্যাকগ্রাউন্ড
+- padding দিয়ে ভিতরের content ফাঁকা রাখা */
+.header h2 {
+  margin: 0;
+}
+/* h2 ট্যাগের ডিফল্ট margin মুছে দেওয়া হয়েছে */
+.form {
+  padding: 30px 40px;
+}
+/* form ফিল্ডগুলোর চারদিকে ফাঁকা জায়গা (padding) রাখা হয়েছে */
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+/* 
+প্রতি ইনপুট ব্লকের নিচে কিছু ফাঁকা জায়গা
+- padding-bottom রাখা হয়েছে যাতে নিচে error মেসেজের জায়গা থাকে
+- position: relative; ছোট ট্যাগগুলোকে সঠিক জায়গায় বসানোর জন্য */
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+}
+/* label-এর নিচে কিছু ফাঁকা জায়গা যাতে ইনপুটের সাথে গায়ে না লাগে */
+.form-control input {
+  border: 2px solid #f0f0f0;
+  border-radius: 4px;
+  display: block;
+  font-family: inherit;
+  font-size: 14px;
+  padding: 10px;
+  width: 100%;
+}
+/* ইনপুট বক্স:
+- হালকা বর্ডার ও গোল কোণা
+- পুরো ব্লক জুড়ে (100%)
+- padding দিয়ে ভিতরের লেখা একটু দূরে রাখা
+- ফন্ট এবং সাইজ ঠিক রাখা */
+.form-control input:focus {
+  outline: 0;
+  border-color: #777;
+}
+/* ইনপুটে ক্লিক করলে:
+- ব্রাউজারের ডিফল্ট আউটলাইন বন্ধ
+- বর্ডারের রঙ #777 করে হাইলাইট */
+.form-control.success input {
+  border-color: #2ecc71;
+}
+/* যদি ইনপুট সঠিক হয় (success class যুক্ত হয়), তাহলে সবুজ বর্ডার */
+.form-control.error input {
+  border-color: #e74c3c;
+}
+/* ইনপুটে ভুল থাকলে লাল বর্ডার (error class) */
+.error{
+  color: #e74c3c;
+  visibility: visible;
+}
+/* এক্সট্রা .error ক্লাস: কোনো error লিখা থাকলে তা লাল রঙে দেখায় */
+.form-control small {
+  color: #e74c3c;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  visibility: hidden; 
+}
+/* ছোট error মেসেজ:
+- ইনপুট বক্সের নিচে দেখানোর জন্য absolute
+- ডিফল্টভাবে লুকানো থাকে */
+.form-control.error small {
+  visibility: visible;
+}
+/* যদি .form-control এ error class থাকে, তাহলে small tag দেখা যাবে */
+
+.form button {
+  background-color: #8e44ad;
+  border: 2px solid #8e44ad;
+  border-radius: 4px;
+  color: #fff;
+  display: block;
+  font-family: inherit;
+  font-size: 16px;
+  padding: 10px;
+  margin-top: 20px;
+  width: 100%;
+}
+/* সাবমিট বাটন:
+- সুন্দর বেগুনি রঙ (#8e44ad)
+- সাদা লেখার রঙ
+- বড় বাটন (width 100%)
+- গোল কোণা, margin-top দিয়ে উপরের ইনপুট থেকে আলাদা রাখা হয়েছে */
