@@ -1,0 +1,84 @@
+<html> <!-- পুরো HTML ডকুমেন্টের শুরু -->
+  <head> <!-- হেড সেকশন: মেটা, টাইটেল, CSS ফাইল -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- মোবাইল ফ্রেন্ডলি করার জন্য ভিউপোর্ট সেট করা হয়েছে -->
+
+    <meta charset="utf-8" />
+    <!-- ক্যারেকটার এনকোডিং UTF-8 ব্যবহার করা হয়েছে যাতে সব ভাষা সাপোর্ট হয় -->
+
+    <title>Course</title>
+    <!-- ব্রাউজারে ট্যাবে যে নাম দেখাবে সেটি -->
+
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <!-- বাহিরের CSS ফাইল সংযুক্ত করা হয়েছে যাতে ডিজাইন অ্যাপ্লাই হয় -->
+  </head>
+
+  <body> <!-- বডি সেকশন: যেটা ইউজার স্ক্রিনে দেখতে পাবে -->
+    <div class="container">
+      <!-- সব কিছু একটা বড় কন্টেইনার ডিভের মধ্যে রাখা হয়েছে -->
+
+      <div class="header">
+        <h2>Create Account</h2>
+        <!-- হেডার অংশ: শিরোনাম হিসেবে 'Create Account' -->
+      </div>
+
+      <form id="form" class="form" action="">
+        <!-- ফর্ম শুরু হয়েছে, যেটার id=form এবং class=form -->
+        <!-- action="" মানে ডিফল্টভাবে কোথাও সাবমিট হবে না (জাভাস্ক্রিপ্ট দিয়ে হ্যান্ডেল করা হবে) -->
+
+        <div class="form-control">
+          <!-- একটি ইনপুট ফিল্ড এবং লেবেলের ব্লক -->
+          <label for="username">Username</label>
+          <!-- ইনপুটের জন্য লেবেল; for="username" মানে নিচের ইনপুটের id-এর সাথে যুক্ত -->
+
+          <input type="text" placeholder="Username" id="username" />
+          <!-- ইউজারনেম টাইপ করার টেক্সট বক্স -->
+
+          <small>Error message</small>
+          <!-- ভুল হলে মেসেজ দেখানোর জন্য small tag -->
+        </div>
+
+        <div class="form-control">
+          <label for="email">Email</label>
+          <input type="email" placeholder="example@gmail.com" id="email" />
+          <!-- ইমেইল টাইপ ইনপুট ফিল্ড -->
+
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password">Password</label>
+          <input type="password" placeholder="Password" id="password" />
+          <!-- পাসওয়ার্ড ইনপুট, টাইপ হাইড করে রাখে -->
+
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="password2">Password check</label>
+          <input type="password" placeholder="Password two" id="password2" />
+          <!-- দ্বিতীয়বার পাসওয়ার্ড যাচাই করার জন্য -->
+
+          <small>Error message</small>
+        </div>
+
+        <div class="form-control">
+          <label for="file">File </label>
+          <input type="file" id="file" />
+          <!-- ইউজার কোনো ফাইল (ছবি, PDF, ডকুমেন্ট) আপলোড করতে পারবে -->
+
+          <small>Error message</small>
+        </div>
+
+        <button>Submit</button>
+        <!-- সাবমিট বাটন, যেটা ক্লিক করলে ফর্ম সাবমিট হবে -->
+      </form>
+    </div>
+
+    <script src="js2.js"></script>
+    <!-- এক্সটার্নাল জাভাস্ক্রিপ্ট ফাইল যুক্ত করা হয়েছে -->
+  </body>
+
+  <html></html>
+  <!-- এটি ভুলভাবে লেখা হয়েছে এবং HTML structure নষ্ট করছে -->
+</html>
