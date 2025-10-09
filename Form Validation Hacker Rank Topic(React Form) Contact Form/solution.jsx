@@ -7,7 +7,7 @@ function App() {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
-  const [submittedData, setSubmittedData] = useState(null);
+  const [submittedData, setSubmittedData] = useState(null); //It means set of data use let say {1,2,3} set initial set empty we consider use input this .set data here     setSubmittedData({name,email,message});
   const [error, setError] = useState("");
 
   
