@@ -20,11 +20,14 @@ export default function Home() {
           <form className="flex flex-col gap-6">
             <div className="flex flex-col">
               <label className="mb-1 text-gray-500">E-mail</label>
+
               <input
                 type="email"
                 placeholder="example@gmail.com"
                 className={`
-    border border-gray-300 rounded-md px-4 py-2 w-full focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:bg-yellow-50"}
+    border border-gray-300 rounded-md px-4 py-2 w-full
+    focus:outline-none focus:ring-4 focus:ring-yellow-400 focus:bg-green-100
+    transition-colors
   `}
               />
             </div>
@@ -71,3 +74,5 @@ export default function Home() {
     </div>
   );
 }
+
+
