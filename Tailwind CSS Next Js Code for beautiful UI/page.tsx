@@ -99,9 +99,23 @@ Explaination of cOde:
             </div>
       <h1 className="text-5xl text-center font-bold mx-4 px-5 mb-12">Welcome Back <br/>PULSE!</h1>
       </h1>
-    
+    //flex mane dhoro div e n element ase sobgula k 1 ta chinta kora তুমি বলছো —
+
+“flex মানে সব element কে একসাথে একটা জিনিস হিসেবে ধরা হয়।”
+
+✅ একদম ঠিক!
+flex দিলে container তার ভেতরের সব child element-কে একসাথে একটা গ্রুপ হিসেবে ধরে।
+তারপর বলে —
+👉 “তোমরা সবাই একটা লাইনে (বা কলামে) দাঁড়াও, আমি তোমাদের একসাথে সাজাচ্ছি।”
+
+🔹 flex মানে কী?
+
+flex = display: flex;
+মানে container টি “flex layout mode”-এ চলে গেল।
+        //flex flex-col 1st flex means all element in a div convert 1 2nd flex flex-col direction kothay. flex-col col borabor flex
       <form className="flex flex-col gap-6">
         <div className="flex flex -col">
+          //items start mane iems k container er shurur dike rakhi
       <label className="text-5xl font-medium mx-2 px-2 mb-3 items-start ">Email</label>
       {/*mb-6 margin bottom eta space dibe label r input box er majhe*/}
       <input type="email" placeholder="Enter our email eg: example@gmail.com" className="hover:bg-green-100 px-4 py-2 border border-gray-300 w-full max-w-md rounded-md mb-6"></input>
