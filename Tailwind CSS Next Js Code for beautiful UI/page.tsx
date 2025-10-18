@@ -91,6 +91,61 @@ Explaination of cOde:
       
       {/* niche নামাতে margin-top 50px ব্যবহার করুন mb-12 margin bottom gap barai button r heading e */}
      justify centerhoilo flex sob kichu 1 tay convert justify give decision kemne sajabo.justify center content center e justify left left e 
+
+    ১️⃣ Flex shorthand recap
+
+CSS-এ flex shorthand প্রোপার্টি থাকে তিনটি অংশে:
+
+flex: [grow] [shrink] [basis];
+
+
+grow → কতটা available space নিতে পারবে
+
+shrink → ছোট হতে পারবে কতটা (container shrink হলে)
+
+basis → default size (প্রারম্ভিক width/height)
+
+Tailwind এ flex-1, flex-0.5 ইত্যাদি মূলত grow value।
+
+২️⃣ Tailwind এ flex-0.5 মানে
+<div class="flex">
+  <div class="flex-0.5 bg-blue-400">A</div>
+  <div class="flex-1 bg-green-400">B</div>
+</div>
+
+
+flex-0.5 → এই div parent এর available space-এর 0.5 অংশ নেবে
+
+flex-1 → এই div parent এর available space-এর 1 অংশ নেবে
+
+💡 সহজভাবে:
+
+যদি 2 child থাকে: 0.5 + 1 = 1.5 total parts
+
+তাহলে blue div → 0.5 / 1.5 = 1/3 space
+
+green div → 1 / 1.5 = 2/3 space
+
+৩️⃣ Numeric Flex ratio ব্যাখ্যা
+<div class="flex">
+  <div class="flex-0.5 bg-blue-400">A</div>
+  <div class="flex-0.5 bg-green-400">B</div>
+</div>
+
+
+উভয় div 0.5 → সমান space (50%-50% হয় না, grow ratio অনুযায়ী)
+
+ratio = 0.5 : 0.5 = 1:1 → সমান
+
+৪️⃣ Tailwind shorthand table
+Tailwind	CSS Equivalent	Meaning
+flex-1	flex: 1 1 0%	Full grow, shrink allowed, basis 0
+flex-0.5	flex: 0.5 1 0%	Half grow, shrink allowed, basis 0
+flex-auto	flex: 1 1 auto	Grow/shrink with basis auto
+
+💡 সারসংক্ষেপ:
+flex-0.5 মানে — parent এর available space-এর 0.5 অংশ নেওয়া, flex-grow মান হিসেবে।
+যদি একাধিক child থাকে, তাদের grow ratio অনুযায়ী space ভাগ হয়।
      <div className="flex-1 flex flex-col justify-center items-center bg-white px-6 md:px-16 ">
       <div className="w-full max-w-md">
         <div className="flex justify-center mb-8">
