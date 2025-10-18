@@ -76,3 +76,49 @@ export default function Home() {
 }
 
 
+Explaination of cOde:
+-----------------------
+
+  {/* 
+  flex flex-col: 
+  1 1st flex → পুরো div কে flex container বানায়
+  2 2nd flex-col → child elements (h1, button) vertical (উপরে থেকে নিচে) সাজায়
+*/}
+ 
+   {/*
+   return(
+    <div className="flex min-h-screen ">
+      
+      {/* niche নামাতে margin-top 50px ব্যবহার করুন mb-12 margin bottom gap barai button r heading e */}
+     
+     <div className="flex-1 flex flex-col justify-center items-center bg-white px-6 md:px-16 ">
+      <div className="w-full max-w-md">
+        <div className="flex justify-center mb-8">
+          <div>
+            <img src={Img}></img>
+            </div>
+      <h1 className="text-5xl text-center font-bold mx-4 px-5 mb-12">Welcome Back <br/>PULSE!</h1>
+      </h1>
+    
+      <form className="flex flex-col gap-6">
+        <div className="flex flex -col">
+      <label className="text-5xl font-medium mx-2 px-2 mb-3 items-start ">Email</label>
+      {/*mb-6 margin bottom eta space dibe label r input box er majhe*/}
+      <input type="email" placeholder="Enter our email eg: example@gmail.com" className="hover:bg-green-100 px-4 py-2 border border-gray-300 w-full max-w-md rounded-md mb-6"></input>
+    <br />
+    <br />
+<label className="text-5xl font-medium mx-2 px-2 mb-3 items-start">Password</label>
+    <input type="password" placeholder="Enter your password eg:*********"className="hover:bg-green-100 px-4 py-2 border border gray-300 w-full max-w-md rounded md mb-6"></input>
+   
+<label>Remember me</label>
+{/*transition means when click color change hover when cursor keep in color change*/}
+      <button className="bg-yellow-400 w-[400px] text-black font-semibold py-2 rounded-full hover:bg-yellow-500 transition active:bg-green-400 transition">Signin</button>
+        <br/>
+        
+      </div>
+    </div>
+    </>
+  );
+  */}
+ */
+
