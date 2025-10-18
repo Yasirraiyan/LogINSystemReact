@@ -90,7 +90,7 @@ Explaination of cOde:
     <div className="flex min-h-screen ">
       
       {/* niche নামাতে margin-top 50px ব্যবহার করুন mb-12 margin bottom gap barai button r heading e */}
-     
+     justify centerhoilo flex sob kichu 1 tay convert justify give decision kemne sajabo.justify center content center e justify left left e 
      <div className="flex-1 flex flex-col justify-center items-center bg-white px-6 md:px-16 ">
       <div className="w-full max-w-md">
         <div className="flex justify-center mb-8">
