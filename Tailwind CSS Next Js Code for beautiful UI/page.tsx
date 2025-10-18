@@ -112,7 +112,7 @@ flex দিলে container তার ভেতরের সব child element-�
 
 flex = display: flex;
 মানে container টি “flex layout mode”-এ চলে গেল।
-        //flex flex-col 1st flex means all element in a div convert 1 2nd flex flex-col direction kothay. flex-col col borabor flex
+        //flex flex-col 1st flex means all element in a div convert 1 2nd flex flex-col direction kothay. flex-col col borabor flex.sudhu flex-col vul flex flex-col right.
       <form className="flex flex-col gap-6">
         <div className="flex flex -col">
           //items start mane iems k container er shurur dike rakhi
