@@ -191,3 +191,21 @@ flex = display: flex;
   */}
  */
 
+
+    Justify:
+---------------
+
+  , justify → ওই system-এ child কোথায় থাকবে ঠিক করে।
+💡 মনে রাখো: Flex → সব child কে “এক system” এ নিয়ে আসে, justify → ওই system-এ child কোথায় থাকবে ঠিক করে।
+justify-start / center / end / space-between / around 
+
+justify-start-1st e 
+center majkhane 
+end sheshe 
+space-between-x axis borabor soman distance
+space-around x-y both axis borabor 4 pashe same distance
+
+items:
+------------
+
+  তোমার কথায়: justify → main axis alignment, আর items → perpendicular alignment
