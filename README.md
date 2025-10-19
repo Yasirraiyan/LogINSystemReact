@@ -1,3 +1,5 @@
 ![React Logo](https://reactjs.org/logo-og.png)
 
-![Next Logo](https://brandfetch.com/nextjs.org?view=library&library=default&collection=logos&asset=idqNI71Hra&utm_source=https%253A%252F%252Fbrandfetch.com%252Fnextjs.org&utm_medium=copyAction&utm_campaign=brandPageReferral)
+
+![Next.js Logo](https://upload.wikimedia.org/wikipedia/commons/8/8e/Nextjs-logo.svg)
+![Tailwind CSS Logo](https://upload.wikimedia.org/wikipedia/commons/6/63/Tailwind_CSS_Logo.svg)
