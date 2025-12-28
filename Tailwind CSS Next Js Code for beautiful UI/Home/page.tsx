@@ -83,7 +83,7 @@ export default function Home() {
           </form>
         </div>
       </div>
-      <div className=" w-1/2 hidden md:flex items-center justify-center bg-gradient-to-b from-yellow-400 via-yellow-300/30 to-yellow-100/0 mt-7 mb-4 mr-7 width={947} height={960} top={494.5} left={50.5}   rounded-md style={{ clipPath: 'polygon(0 0, 100% 0, 100% 85%, 0% 100%)', background: 'linear-gradient(to bottom right, from-[#F4CF16] to-[#FFF2B3]) ' }}">
+      <div className=" w-1/2 hidden md:flex items-center justify-center bg-gradient-to-b from-yellow-400 via-yellow-300/30 to-yellow-100/0 mt-7 mb-4 mr-7 width={947} height={960} top={494.5} left={50.5}   rounded-md style={{  background: 'linear-gradient(to bottom right, from-[#F4CF16] to-[#FFF2B3]) ' }}">
         <div className="items-center px-8 py-2 space-y-6 -translate-y-3 ">
           <div className="mt-30 width={620.9} height={152} top={112.8} left={75.41} gap={22}">
             <h2 className="text-3xl font-bold mb-4 pl-5 mt-30">
