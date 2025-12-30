@@ -9,12 +9,12 @@ export default function Home() {
     <div className="flex min-h-screen overflow-hidden shadow-3xl shadow-amber-900 from-top-left ">
       <div className="absolute top-0 left-0 w-72 h-72 rounded-full bg-amber-300 opacity-20 blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-30 h-50 rounded-full bg-gradient-to-tr from-blue-600 to-blue-400 opacity-40 blur-3xl pointer-events-none origin-bottom-left scale-125"></div>
-      <div className="absolute top-0 left-5 z-50 px-40">
+      <div className="absolute top-0 left-5 z-50 px-35">
         <Image
           src={pulse}
           alt="Pulse Logo"
-          width={120}
-          height={50}
+          width={224.03}
+          height={70.95}
           className="object-contain"
         />
       </div>
@@ -116,7 +116,7 @@ export default function Home() {
                 alt="Illustration 1"
                 width={400}
                 height={337}
-                className="rounded-lg  transition-transform duration-300 
+                className="rounded-[20.03px]  transition-transform duration-300 
                 w-[399.61px] h-[337.52px] object-cover -translate-x-13"
               />
               <Image
@@ -124,7 +124,7 @@ export default function Home() {
                 alt="Illustration 3"
                 width={400}
                 height={337}
-                className="rounded-lg  transition-transform duration-300 
+                className="rounded-[20.03px] transition-transform duration-300 
                 w-[200px] h-[337px] object-cover -translate-x-13 px-0 shadow-[20px_0px_40px_-5px_#F4CF16]"
               />
             </div>
