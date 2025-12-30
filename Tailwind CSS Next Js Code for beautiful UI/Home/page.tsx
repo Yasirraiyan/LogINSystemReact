@@ -5,15 +5,15 @@ import { AiFillEye } from "react-icons/ai";
 import pulse from "../../assets/PULSE.png";
 export default function Home() {
   return (
-    <div className="flex min-h-screen overflow-hidden shadow-3xl shadow-amber-900 from-top-left ">
+    <div className="flex h-screen overflow-hidden shadow-3xl shadow-amber-900 from-top-left ">
       <div className="absolute top-0 left-0 w-72 h-72 rounded-full bg-amber-300 opacity-20 blur-3xl pointer-events-none"></div>
       <div className="absolute bottom-0 left-0 w-30 h-50 rounded-full bg-gradient-to-tr from-blue-600 to-blue-400 opacity-40 blur-3xl pointer-events-none origin-bottom-left scale-125"></div>
       <div className="absolute top-0.5 left-5 z-50 px-40">
         <Image
           src={pulse}
           alt="Pulse Logo"
-          width={120}
-          height={50}
+          width={224.03}
+          height={70.95}
           className="object-contain"
         />
       </div>
@@ -23,7 +23,7 @@ export default function Home() {
           height={459px} top={298px} left={315px} gap={42px}"
         >
           <div className="mb-8">
-            <div>{/*<img src={Img}></img>*/}</div>
+            <div>
             <h1 className="text-4xl font-bold text-black mt-4 ml-2 gap={26px} width={460px} height={104px}">
               Welcome Back <br /> PULSE!
             </h1>
@@ -83,9 +83,10 @@ export default function Home() {
           </form>
         </div>
       </div>
-      <div className=" w-1/2 hidden md:flex items-center justify-center bg-gradient-to-b from-yellow-400 via-yellow-300/30 to-yellow-100/0 mt-7 mb-4 mr-7 width={947} height={960} top={494.5} left={50.5}   rounded-md style={{  background: 'linear-gradient(to bottom right, from-[#F4CF16] to-[#FFF2B3]) ' }}">
+         </div>
+      <div className=" w-1/2 hidden md:flex items-center justify-center bg-gradient-to-b from-yellow-400 via-yellow-300/30 to-yellow-100/0 mt-7 mb-4 mr-7 width={947} height={960} top={494.5} left={50.5}   rounded-[20.03px] style={{  background: 'linear-gradient(185.12deg,#F4CF16 8.22%, rgba(255, 242, 179, 0) 89.96% ' }}">
         <div className="items-center px-8 py-2 space-y-6 -translate-y-3 ">
-          <div className="mt-30 width={620.9} height={152} top={112.8} left={75.41} gap={22}">
+          <div className="mt-30">
             <h2 className="text-3xl font-bold mb-4 pl-5 mt-30">
               The Simplest way to manage <br />
               your workforce.
